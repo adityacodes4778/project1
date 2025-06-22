@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.glitch {
+  position: relative;
+  color: #0f0;
+  animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red, -2px 0 blue; }
+  20% { text-shadow: -2px 0 red, 2px 0 blue; }
+  40% { text-shadow: 2px 2px red, -2px -2px blue; }
+  60% { text-shadow: -2px -2px red, 2px 2px blue; }
+  80% { text-shadow: 2px -2px red, -2px 2px blue; }
+  100% { text-shadow: 0 0 red, 0 0 blue; }
+}
+
+.typewriter {
+  border-right: 2px solid pink;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(30) forwards;
+}
+
+@keyframes typing {
+  to { width: 100%; }
+}
+#home {
+  background-image: url('https://wallpaperaccess.com/full/2637581.jpg'); /* example cyberpunk bg */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  backdrop-filter: brightness(0.5);
+}
